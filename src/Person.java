@@ -1,13 +1,13 @@
 public class Person {
     private String name;
     private int age;
-    private Pet[] pets;
+    private PetManager petManager;
 
     public Person(String name, int age, int numberOfPet) {
         this.name = name;
         this.age = age;
-        this.pets = new Pet[numberOfPet];
-        
+        this.petManager = new PetManager(numberOfPet);
+
     }
 
     public int getAge() {
@@ -26,11 +26,15 @@ public class Person {
         this.name = name;
     }
 
-    public Pet[] getPets() {
-        return pets;
+    public PetManager getPetManager() {
+        return petManager;
     }
 
-    public void setPet(Pet[] pet) {
-        this.pets = pet;
+    public void setPetManager(PetManager petManager) {
+        this.petManager = petManager;
+    }
+
+    public boolean addPet(Pet pet) {
+        return petManager.addPets(pet);
     }
 }
