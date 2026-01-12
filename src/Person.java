@@ -1,12 +1,12 @@
 public class Person {
     private String name;
     private int age;
-    private Pet[] pet;
+    private Pet[] pets;
 
     public Person(String name, int age, int numberOfPet) {
         this.name = name;
         this.age = age;
-        this.pet = new Pet[numberOfPet];
+        this.pets = new Pet[numberOfPet];
         
     }
 
@@ -26,11 +26,11 @@ public class Person {
         this.name = name;
     }
 
-    public Pet[] getPet() {
-        return pet;
+    public Pet[] getPets() {
+        return pets;
     }
 
     public void setPet(Pet[] pet) {
-        this.pet = pet;
+        this.pets = pet;
     }
 }
