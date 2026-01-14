@@ -3,6 +3,7 @@ public class PetManager {
     private Pet[] pets;
 
     public PetManager(int numberOfPets) {
+        this. counter = 0;
         this.pets = new Pet[numberOfPets];
     }
 
