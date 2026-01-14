@@ -25,6 +25,14 @@ public class Main{
             IOManager.printMessage("Failled to remove pet");
         }
        
-        
+        if (pers.getPets().length == 0) {
+            IOManager.printMessage("no pets found");
+        }else{
+            for(Pet pet : pers.getPets()){
+                IOManager.printMessage(pet.getPetName());
+            }
+        }
+
+
     }
 }

@@ -42,6 +42,9 @@ public class Person {
         return petManager.removePet(pet);
     }
 
+    public Pet[] getPets(){
+        return petManager.getPets();
+    }
         
     
 }
