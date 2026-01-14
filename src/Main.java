@@ -6,11 +6,11 @@ public class Main{
 
         Person pers = new Person("Freddy", 19, 1);
 
-        System.out.println(pers.getPets());
+        //System.out.println(pers.getPets());
 
-        for (Pet pet : pers.getPets()) {
-            System.out.println(pet.getPetName());
-        }
+        // for (Pet pet : pers.getPets()) {
+        //     System.out.println(pet.getPetName());
+        // }
     }
 
    
