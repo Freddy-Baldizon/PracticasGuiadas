@@ -3,7 +3,6 @@ public class PetManager {
     private Pet[] pets;
 
     public PetManager(int numberOfPets) {
-        this.counter = counter;
         this.pets = new Pet[numberOfPets];
     }
 
@@ -33,5 +32,15 @@ public class PetManager {
             }
         }
         return false;
+    }
+
+    public Pet[] getPets(){
+        Pet[] pets = new Pet[this.counter];
+
+        for(int i = 0; i < this.counter; i++){
+            pets[i] = this.pets[i];
+        }
+
+        return pets;
     }
 }

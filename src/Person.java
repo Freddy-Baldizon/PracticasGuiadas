@@ -37,4 +37,11 @@ public class Person {
     public boolean addPet(Pet pet) {
         return petManager.addPets(pet);
     }
+
+    public boolean removePet(Pet pet){
+        return petManager.removePet(pet);
+    }
+
+        
+    
 }

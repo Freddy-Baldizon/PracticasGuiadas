@@ -9,17 +9,22 @@ public class Main{
         //     System.out.println(pet.getPetName());
         // }
 
-        Person pers = new Person("Freddy", 19, 1);
+        Person pers = new Person("Freddy", 19, 2);
+        Pet pet1 =  new Pet("Golden", "dog");
 
-        if (pers.addPet(new Pet("Goldie", "fish"))) {
+        if (pers.addPet(pet1)) {
             IOManager.printMessage("Success");
         } else {
             IOManager.printMessage("Failed");
         }
-       
-       
 
+      
+        if (pers.removePet(pet1)) {
+            IOManager.printMessage("Pet remove successfully");
+        }else{
+            IOManager.printMessage("Failled to remove pet");
+        }
+       
+        
     }
-
-   
 }
