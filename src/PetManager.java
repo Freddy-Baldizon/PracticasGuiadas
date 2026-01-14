@@ -44,4 +44,21 @@ public class PetManager {
 
         return pets;
     }
+
+    public boolean updatePet(Pet pet, int index){
+        if (pet == null) {
+            return false;
+        } 
+
+        if (index < 0 || index > pets.length) {
+            return false;
+        }
+        if (pets[index] == pet) {
+             return true;
+        }
+
+        return false;
+       
+
+    }
 }

@@ -45,6 +45,10 @@ public class Person {
     public Pet[] getPets(){
         return petManager.getPets();
     }
+
+    public boolean updatePet(){
+        return petManager.updatePet(null, age);
+    }
         
     
 }
