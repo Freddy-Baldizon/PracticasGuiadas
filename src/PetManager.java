@@ -3,7 +3,8 @@ public class PetManager {
     private Pet[] pets;
 
     public PetManager(int numberOfPets) {
-        numberOfPets = 0;
+        this.counter = counter;
+        this.pets = new Pet[numberOfPets];
     }
 
     public boolean addPets(Pet pet){
