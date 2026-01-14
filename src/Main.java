@@ -19,11 +19,11 @@ public class Main{
         }
 
       
-        if (pers.removePet(pet1)) {
-            IOManager.printMessage("Pet remove successfully");
-        }else{
-            IOManager.printMessage("Failled to remove pet");
-        }
+        // if (pers.removePet(pet1)) {
+        //     IOManager.printMessage("Pet remove successfully");
+        // }else{
+        //     IOManager.printMessage("Failled to remove pet");
+        // }
        
         if (pers.getPets().length == 0) {
             IOManager.printMessage("no pets found");
@@ -31,6 +31,12 @@ public class Main{
             for(Pet pet : pers.getPets()){
                 IOManager.printMessage(pet.getPetName());
             }
+        }
+
+        if (pers.updatePet(pet1, 0)) {
+            IOManager.printMessage("update");
+        }else{
+            IOManager.printMessage("Faild update");
         }
 
 

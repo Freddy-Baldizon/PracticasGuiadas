@@ -46,8 +46,8 @@ public class Person {
         return petManager.getPets();
     }
 
-    public boolean updatePet(){
-        return petManager.updatePet(null, age);
+    public boolean updatePet(Pet pet, int index){
+        return petManager.updatePet(pet, index);
     }
         
     
