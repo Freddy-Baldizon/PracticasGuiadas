@@ -60,7 +60,7 @@ public class Main {
         }
         System.out.println("La suma total es: " + suma);
     }
-    // falta saber como sacar el segundo mayor de los arrays
+    
     public static void segundoMayor(){
         int[] numbers = { 1, 2, 3, 40, 5 };
         int mayor = numbers[0];
