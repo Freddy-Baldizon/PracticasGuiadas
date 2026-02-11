@@ -9,6 +9,7 @@ public class Main {
         segundoMayor();
         suma();
         cuadrado();
+        
     }
 
     public static void valorAlto() {
